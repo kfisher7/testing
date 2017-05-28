@@ -6,8 +6,10 @@
 
 /* Run with only HOST code *\
 
+// additional comment
 int main(void) {
-	printf("Hello World!\n");
+	printf("Goodbye World!\n");
+	// FUTURE: comment
 	return 4;
 }
 
@@ -21,7 +23,7 @@ __global__ void mykernel(void) {
 
 int main(void) {
   mykernel<<<1,1>>>();
-  printf("Hello World!\n");
+  printf("Goodbye World!\n");
   return 0;
 }
 
