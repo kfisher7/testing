@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
+#include <include>
 
 __global__ void add(int *a, int *b, int *c) {
   *c = *a + *b;
