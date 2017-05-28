@@ -6,8 +6,9 @@
 
 /* Run with only HOST code *\
 
+// some other additional comment
 int main(void) {
-	printf("Hello World!\n");
+	printf("Hello Universe!\n");
 	return 4;
 }
 
@@ -21,7 +22,8 @@ __global__ void mykernel(void) {
 
 int main(void) {
   mykernel<<<1,1>>>();
-  printf("Hello World!\n");
+  printf("Hello Universe!\n");
+  // DEFECT: comment
   return 0;
 }
 
